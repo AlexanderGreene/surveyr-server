@@ -1,6 +1,9 @@
 # Created by https://gitignore.org
 # Node.gitignore
 
+# Project Specific files
+keys.js
+
 # Logs
 logs
 *.log
