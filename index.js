@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const { mongodbUri } = require('./config/keys');
-
+const keys = require('./config/keys');
 require('./services/passport');
-require('./routes/authRoutes')(app);
+require('./models/User');
 
-mongoose.connect(mongodbUri);
+mongoose.connect(keys.mongodbUri);
 
 const app = express();
+require('./routes/authRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 
