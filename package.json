@@ -7,7 +7,8 @@
 		"npm": "10.9.2"
 	},
 	"scripts": {
-		"start": "node index.js"
+		"start": "node index.js",
+		"dev": "nodemon index.js"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,6 +16,7 @@
 	"description": "",
 	"dependencies": {
 		"express": "^4.15.3",
+		"mongoose": "^8.16.5",
 		"passport": "^0.5.3",
 		"passport-google-oauth20": "^2.0.0"
 	}
