@@ -2,7 +2,7 @@
 # Node.gitignore
 
 # Project Specific files
-keys.js
+dev.js
 
 # Logs
 logs
