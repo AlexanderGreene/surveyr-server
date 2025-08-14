@@ -6,9 +6,13 @@ class Payments extends Component {
 		return (
 			<StripeCheckout
 				amount={500}
-				token={(token) => console.log(token)} // callback function to call after stripe returns payment token
+				description='$5 for 5 email credits'
+				name='Surveyr'
 				stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
-			/>
+				token={(token) => console.log(token)} // callback function to call after stripe returns payment token
+			>
+				<button className='btn'>Add Credits</button>
+			</StripeCheckout>
 		);
 	}
 }
